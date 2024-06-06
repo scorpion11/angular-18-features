@@ -1,11 +1,14 @@
-<h1>Angular 18</h1>
+<h1 routerLink="/dashboard">mediservBank - Angular Workshop</h1>
 <nav>
+  <h4>Themen</h4>
   <ul>
-    <li><a routerLink="/zone-less" routerLinkActive="active" ariaCurrentWhenActive="page">Zone less</a></li>
-    <li><a routerLink="/deferrable-views" routerLinkActive="active" ariaCurrentWhenActive="page">Deferrable views</a></li>
-    <li><a routerLink="/signal-api" routerLinkActive="active" ariaCurrentWhenActive="page">Signal API's</a></li>
-    <li><a routerLink="/control-flow" routerLinkActive="active" ariaCurrentWhenActive="page">Built-in control flow</a></li>
+    <li><a routerLink="/zone-less" routerLinkActive="active">Zone less</a></li>
+    <li><a routerLink="/deferrable-views">Deferrable views</a></li>
+    <li><a routerLink="/control-flow">Built-in control flow</a></li>
+    <li><a routerLink="/signal-api">Signal API's</a></li>
+    <li><a routerLink="/route-redirects" [queryParams]="{admin: true}">Route redirects as functions</a></li>
   </ul>
 </nav>
+<hr>
 <hr>
 <router-outlet></router-outlet>
