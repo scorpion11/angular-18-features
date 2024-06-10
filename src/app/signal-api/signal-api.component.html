@@ -1,1 +1,8 @@
-<p>signal-api works!</p>
+<div class="parent-title">Parent Component</div>
+<div class="signal-api-parent">
+  <app-signal-api-child [decoratorName]="decoratorName"
+                        [signalName]="signalName"
+                        (decoratorNameEvent)="updateDecoratorName($event)"
+                        (signalNameEvent)="updateSignalName($event)"></app-signal-api-child>
+  <br><br>
+</div>
